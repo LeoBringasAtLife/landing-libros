@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros de Walter Escalante</title>
+
+    <!-- Google Fonts/Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- Estilos Globales -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Tipografía Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        .libros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .libro {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 500px;
+            justify-content: flex-start;
+        }
+
+        .libro img {
+            width: 100%;
+            max-width: 250px;
+            height: 350px;
+            object-fit: cover;
+            background-color: #e0e0e0;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+            cursor: pointer;
+        }
+
+        .libro h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .libro p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            text-wrap: balance;
+        }
+
+        .libro-link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Libros de Walter Escalante</h1>
+
+        <p>
+            Explora la colección de libros escritos por el Pastor Walter Escalante, donde encontrarás enseñanzas
+            profundas, reflexiones inspiradoras y guías prácticas para el crecimiento espiritual y personal. Cada
+            obra está diseñada para ofrecer sabiduría y motivación, ayudándote a fortalecer tu fe y a enfrentar los
+            desafíos de la vida con una perspectiva renovada.
+        </p>
+
+        <nav>
+            <a href="../pages/quienes-somos.html">Quienes Somos</a>
+            <a href="../pages/autor.html">El Autor</a>
+            <a href="../pages/libros.html">Libros</a>
+            <a href="../pages/contacto.html">Contacto</a>
+            <a href="../pages/contribuciones.html">Contribuciones</a>
+        </nav>
+
+        <br>
+
+        <div class="libros-grid">
+            <div class="libro">
+                <a href="/pages/libros/proverbios.html" class="libro-link">
+                    <img src="../assets/img/libros/proverbios-30-dias.jpg" alt="30 días con Proverbios" loading="lazy">
+                    <h3>30 días con Proverbios</h3>
+                </a>
+                <p>
+                    Un viaje de un mes a través de los sabios consejos del libro de Proverbios. Cada día ofrece una
+                    reflexión profunda y práctica para aplicar en la vida diaria, ayudando al lector a desarrollar
+                    sabiduría y discernimiento.
+                </p>
+            </div>
+            <!-- Fracasados -->
+            <div class="libro">
+                <a href="/pages/libros/fracasados.html" class="libro-link">
+                    <img src="assets/img/libros/fracasados.jpg" alt="Fracasados: Un Camino a la Excelencia"
+                        loading="lazy">
+                    <h3>Fracasados: Un Camino a la Excelencia</h3>
+                </a>
+                <p>
+                    En "Fracasados", Walter Escalante explora cómo los errores y fracasos pueden ser los mayores
+                    maestros en el camino hacia el éxito. A través de historias inspiradoras y análisis profundos, el
+                    autor motiva a los lectores a abrazar sus fracasos como oportunidades de crecimiento y aprendizaje.
+                </p>
+            </div>
+            <!-- Sintomas de un corazon no transformado -->
+            <div class="libro">
+                <a href="/pages/libros/sintomas.html" class="libro-link">
+                    <img src="assets/img/libros/sintomas-corazon.jpg" alt="Síntomas de un Corazón No Transformado"
+                        loading="lazy">
+                    <h3>Síntomas de un Corazón No Transformado</h3>
+                </a>
+                <p>
+                    Una reflexión profunda sobre la condición humana en tiempos de cambio. Escalante aborda desde la
+                    vulnerabilidad emocional hasta la resistencia al cambio, invitando al lector a cuestionar sus
+                    propias convicciones y limitaciones personales.
+                </p>
+            </div>
+            <!-- Dicho está (1) -->
+            <div class="libro">
+                <a href="/pages/libros/dicho-esta.html" class="libro-link">
+                    <img src="assets/img/libros/dicho-esta.jpg" alt="Dicho Está: Un Pensamiento para Cada Día"
+                        loading="lazy">
+                    <h3>Dicho Está: Un Pensamiento para Cada Día</h3>
+                </a>
+                <p>
+                    "Dicho Está" presenta un pensamiento diario diseñado para inspirar y motivar a los lectores a lo
+                    largo del año. Cada reflexión está cuidadosamente elaborada para ofrecer sabiduría práctica y
+                    espiritual, ayudando a cultivar una mentalidad positiva y resiliente.
+                </p>
+            </div>
+            <!-- Dicho está (2) -->
+            <div class="libro">
+                <a href="/pages/libros/verano.html" class="libro-link">
+                    <img src="assets/img/libros/verano.jpg" alt="Dicho Está: Edición Verano" loading="lazy">
+                    <h3>Dicho Está: Edición Verano</h3>
+                </a>
+                <p>
+                    En esta edición veraniega, Walter Escalante nos invita a reflexionar sobre la alegría, el descanso y
+                    la renovación personal. A través de ensayos llenos de inspiración, el autor nos guía para aprovechar
+                    al máximo la energía y el espíritu del verano.
+                </p>
+            </div>
+            <!-- Dicho está (3) -->
+            <div class="libro">
+                <a href="/pages/libros/otoño.html" class="libro-link">
+                    <img src="assets/img/libros/otoño.jpg" alt="Dicho Está: Edición Otoño" loading="lazy">
+                    <h3>Dicho Está: Edición Otoño</h3>
+                </a>
+                <p>
+                    La edición otoñal de "Dicho Está" ofrece una colección de ensayos que exploran temas de cambio,
+                    reflexión y renovación. Escalante invita a los lectores a considerar nuevas perspectivas y a
+                    encontrar sabiduría en las transiciones de la vida.
+                </p>
+            </div>
+            <!-- Dicho está (4) -->
+            <div class="libro">
+                <a href="/pages/libros/invierno.html" class="libro-link">
+                    <img src="assets/img/libros/invierno.jpg" alt="Dicho Está: Edición Invierno" loading="lazy">
+                    <h3>Dicho Está: Edición Invierno</h3>
+                </a>
+                <p>
+                    La edición invernal de "Dicho Está" nos sumerge en reflexiones sobre la introspección, la
+                    resiliencia y la esperanza durante los meses más fríos. Escalante ofrece palabras de aliento y
+                    sabiduría para enfrentar los desafíos que el invierno puede traer.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="btn-center">
+        <button class="btn-comprar" onclick="window.location.href='pages/libros.html'">
+            Comprar Libros
+        </button>
+    </div>
+
+
+    <a href="https://wa.me/541155555555" class="wpp" target="_blank" aria-label="Chat en WhatsApp">
+        <img src="assets/img/iconos/WhatsApp.svg.webp" alt="Logo de WhatsApp" loading="lazy">
+    </a>
+
+
+
+    <footer>
+        <div class="container">
+            <p style="text-align: center; font-size: 14px; color: #999;">&copy; 2025 Walter Escalante.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

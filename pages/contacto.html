@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Iglesia Restauración</title>
+
+    <!-- Google Fonts/Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Estilos Globales -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        /* Botón volver */
+        .volver {
+            display: inline-flex;
+            align-items: left;
+            gap: 6px;
+            text-decoration: none;
+            color: #444;
+            padding: 6px 12px;
+            border-radius: 6px;
+            transition: .2s;
+            margin-bottom: 40px;
+        }
+
+        .volver:hover {
+            background: #eaeaea;
+        }
+
+        /* GRID Redes */
+        .redes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 25px;
+            justify-items: center;
+            margin-top: 25px;
+        }
+
+        .redes a {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: .25s;
+        }
+
+        .redes img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .redes a:hover {
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Contacto & Redes</h1>
+        
+        <a href="../index.html" class="volver">
+            <span class="material-symbols-outlined">arrow_back</span>
+            Volver al Inicio
+        </a>
+
+
+        <div class="redes">
+            <a href="#" target="_blank">
+                <img src="icons/facebook.png" alt="">
+                Facebook
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/instagram.png" alt="">
+                Instagram
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/whatsapp.png" alt="">
+                WhatsApp
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/twitter.png" alt="">
+                Twitter / X
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/youtube.png" alt="">
+                YouTube
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/tiktok.png" alt="">
+                TikTok
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/substack.png" alt="">
+                Substack
+            </a>
+            <a href="#" target="_blank">
+                <img src="icons/wordpress.png" alt="">
+                WordPress
+            </a>
+        </div>
+
+        <footer>
+            Iglesia Cristiana Centro de Restauración · ICCR · Florencio Varela · Argentina
+            +54 (011) 6088-0911 · contacto@iglesiarestauracion.com.ar
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

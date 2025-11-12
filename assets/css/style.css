@@ -1,0 +1,126 @@
+/* Estilos globales o por página */
+
+/* Reset y fuentes globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    vertical-align: -4px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Estructura general */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left;
+    margin-top: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Navbar reutilizable */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+    margin: 35px 0;
+}
+
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 8px 14px;
+    transition: all .25s ease;
+}
+
+nav a:not(.btn-comprar):hover {
+    background: #e8e8e8;
+    color: #000;
+}
+
+
+/* Botones reutilizables */
+.btn-comprar {
+    color: #FFFFFF;
+    border: none;
+    border: 1px solid #000000;
+    padding: 10px 22px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    transition: background .25s ease;
+    font-size: 20px;
+    background: #000000;
+}
+
+.btn-comprar:hover {
+    color: #000000;
+    background: transparent;
+    border: 1px solid #000000;
+}
+
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+/* Botón flotante de WhatsApp */
+.wpp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 9999;
+}
+
+.wpp img {
+    width: 32px;
+    height: auto;
+    display: block;
+}
+
+
+/* Media queries globales */
+@media (max-width: 425px) {
+    h1 {
+        line-height: 1.1;
+    }
+}
