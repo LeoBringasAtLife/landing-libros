@@ -2,24 +2,27 @@
 
 
 ```
-proyecto/
-│
-├── assets/                # Recursos estáticos globales
-│   ├──  css/               # Estilos globales o por página
-│   │   └── style.css
-│   ├──  js/                # Scripts
-│   │   └── main.js
-│   ├──  img/               # Imágenes generales del sitio
-│   │   ├── autor/            # Fotos del autor
-│   │   ├── libros/           # Portadas de libros
-│   └── └── iconos/         # Iconos de redes o imágenes del contacto
-│
-├──  pages/                 # HTML secundarios
+landing-pre - copia/
+├── index.html              # Página principal (catálogo de libros)
+├── pages/                  # Páginas secundarias
 │   ├── autor.html
 │   ├── contacto.html
 │   ├── quienes-somos.html
-│
-├── index.html                # Página principal
-└── README.md                 # Documentación opcional
+│   ├── libros.html
+│   ├── comprar.html
+│   ├── contribuciones.html
+│   └── libros/             # Páginas individuales de cada libro
+│       ├── proverbios.html
+│       ├── fracasados.html
+│       ├── sintomas.html
+│       └── ...
+├── assets/
+│   ├── css/style.css       # Estilos globales
+│   ├── js/main.js          # Scripts (actualmente vacío)
+│   └── img/
+│       ├── libros/         # Portadas de libros
+│       ├── autor/          # Fotos del autor
+│       └── iconos/         # Iconos (WhatsApp)
+└── readme.md
 
 ```

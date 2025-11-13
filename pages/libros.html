@@ -1,43 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>libros</title>
+    <title>Libros - Walter Escalante</title>
+
+    <!-- Google Fonts/Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     <!-- Estilos Globales -->
     <link rel="stylesheet" href="../assets/css/style.css">
-    <!-- Tipografia Inter -->
+    <!-- Tipografía Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Google Fonts/Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" />
 
     <style>
-        .volver {
-            display: inline-flex;
-            align-items: left;
-            gap: 6px;
-            text-decoration: none;
-            color: #444;
-            padding: 6px 12px;
-            border-radius: 6px;
-            transition: .2s;
-            margin-bottom: 40px;
+
+        .libros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
 
-        .volver:hover {
-            background: #eaeaea;
+        .libro {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 500px;
+            justify-content: flex-start;
+            transition: transform 0.2s ease;
+        }
+
+        .libro:hover {
+            transform: translateY(-2px);
+        }
+
+        .libro img {
+            width: 100%;
+            max-width: 250px;
+            height: 350px;
+            object-fit: cover;
+            background-color: #e0e0e0;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
+            cursor: pointer;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .libro img:hover {
+            box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+        }
+
+        .libro h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .libro p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
+            text-wrap: balance;
+        }
+
+        .libro-link {
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
         }
     </style>
 </head>
-
 <body>
-    <h1>Libros</h1>
+    <div class="container">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="autor.html">El Autor</a>
+            <a href="libros.html" class="active">Libros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="contribuciones.html">Contribuciones</a>
+        </nav>
+        
+        <h1>Libros de Walter Escalante</h1>
 
-    <a href="../index.html">
-        <span class="material-symbols-rounded">arrow_back</span>
-        Volver al Inicio
-    </a>
+        <br>
+
+        <p>
+            Explora la colección completa de libros escritos por el Pastor Walter Escalante. Cada obra está
+            diseñada para ofrecer sabiduría práctica y espiritual, ayudándote a fortalecer tu fe y enfrentar
+            los desafíos de la vida con una perspectiva renovada.
+        </p>
+
+        <div class="libros-grid">
+            <div class="libro">
+                <a href="libros/proverbios.html" class="libro-link">
+                    <img src="../assets/img/libros/proverbios-30-dias.jpg" alt="30 días con Proverbios" loading="lazy">
+                    <h3>30 días con Proverbios</h3>
+                </a>
+                <p>
+                    Un viaje de un mes a través de los sabios consejos del libro de Proverbios. Cada día ofrece una
+                    reflexión profunda y práctica para aplicar en la vida diaria.
+                </p>
+            </div>
+
+            <div class="libro">
+                <a href="libros/fracasados.html" class="libro-link">
+                    <img src="../assets/img/libros/fracasados.jpg" alt="Fracasados: Un Camino a la Excelencia" loading="lazy">
+                    <h3>Fracasados: Un Camino a la Excelencia</h3>
+                </a>
+                <p>
+                    Explora cómo los errores y fracasos pueden ser los mayores maestros en el camino hacia el éxito.
+                </p>
+            </div>
+
+            <div class="libro">
+                <a href="libros/sintomas.html" class="libro-link">
+                    <img src="../assets/img/libros/sintomas-corazon.jpg" alt="Síntomas de un Corazón No Transformado" loading="lazy">
+                    <h3>Síntomas de un Corazón No Transformado</h3>
+                </a>
+                <p>
+                    Una reflexión profunda sobre la condición humana en tiempos de cambio y transformación.
+                </p>
+            </div>
+
+            <div class="libro">
+                <a href="libros/dicho-esta.html" class="libro-link">
+                    <img src="../assets/img/libros/dicho-esta.jpg" alt="Dicho Está: Un Pensamiento para Cada Día" loading="lazy">
+                    <h3>Dicho Está: Un Pensamiento para Cada Día</h3>
+                </a>
+                <p>
+                    Un pensamiento diario diseñado para inspirar y motivar a los lectores a lo largo del año.
+                </p>
+            </div>
+
+            <div class="libro">
+                <a href="libros/verano.html" class="libro-link">
+                    <img src="../assets/img/libros/verano.jpg" alt="Dicho Está: Edición Verano" loading="lazy">
+                    <h3>Dicho Está: Edición Verano</h3>
+                </a>
+                <p>
+                    Reflexiones sobre la alegría, el descanso y la renovación personal durante el verano.
+                </p>
+            </div>
+
+            <div class="libro">
+                <a href="libros/otoño.html" class="libro-link">
+                    <img src="../assets/img/libros/otoño.jpg" alt="Dicho Está: Edición Otoño" loading="lazy">
+                    <h3>Dicho Está: Edición Otoño</h3>
+                </a>
+                <p>
+                    Ensayos que exploran temas de cambio, reflexión y renovación durante el otoño.
+                </p>
+            </div>
+
+            <div class="libro">
+                <a href="libros/invierno.html" class="libro-link">
+                    <img src="../assets/img/libros/invierno.jpg" alt="Dicho Está: Edición Invierno" loading="lazy">
+                    <h3>Dicho Está: Edición Invierno</h3>
+                </a>
+                <p>
+                    Reflexiones sobre la introspección, la resiliencia y la esperanza durante el invierno.
+                </p>
+            </div>
+        </div>
+
+        <div class="btn-center">
+            <button class="btn-comprar" onclick="window.location.href='comprar.html'">
+                Comprar Libros
+            </button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p style="text-align: center; font-size: 14px; color: #999;">&copy; 2025 Iglesia Restauración — Florencio Varela, Buenos Aires</p>
+        </div>
+    </footer>
 </body>
-
 </html>

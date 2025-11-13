@@ -51,6 +51,17 @@
             transition: .25s;
         }
 
+        nav a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #000000;
+            font-size: 17px;
+            padding: 10px 16px;
+            border-radius: var(--border-radius);
+        }
+
         .redes img {
             width: 55px;
             height: 55px;
@@ -73,53 +84,58 @@
 <body>
 
     <div class="container">
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="autor.html">El Autor</a>
+            <a href="libros.html">Libros</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <a href="contribuciones.html">Contribuciones</a>
+        </nav>
 
         <h1>Contacto & Redes</h1>
-        
-        <a href="../index.html" class="volver">
-            <span class="material-symbols-outlined">arrow_back</span>
-            Volver al Inicio
-        </a>
 
+        <br>
+
+        <p style="margin-bottom: 25px;">
+            Estamos aquí para servirte. Puedes contactarnos a través de cualquiera de nuestras redes sociales,
+            WhatsApp o por correo electrónico. Te responderemos a la brevedad.
+        </p>
 
         <div class="redes">
-            <a href="#" target="_blank">
-                <img src="icons/facebook.png" alt="">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/iconos/WhatsApp.svg.webp" alt="Facebook">
                 Facebook
             </a>
-            <a href="#" target="_blank">
-                <img src="icons/instagram.png" alt="">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/iconos/WhatsApp.svg.webp" alt="Instagram">
                 Instagram
             </a>
-            <a href="#" target="_blank">
-                <img src="icons/whatsapp.png" alt="">
+            <a href="https://wa.me/541155555555" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/iconos/WhatsApp.svg.webp" alt="WhatsApp">
                 WhatsApp
             </a>
-            <a href="#" target="_blank">
-                <img src="icons/twitter.png" alt="">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/iconos/WhatsApp.svg.webp" alt="Twitter / X">
                 Twitter / X
             </a>
-            <a href="#" target="_blank">
-                <img src="icons/youtube.png" alt="">
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="../assets/img/iconos/WhatsApp.svg.webp" alt="YouTube">
                 YouTube
-            </a>
-            <a href="#" target="_blank">
-                <img src="icons/tiktok.png" alt="">
-                TikTok
-            </a>
-            <a href="#" target="_blank">
-                <img src="icons/substack.png" alt="">
-                Substack
-            </a>
-            <a href="#" target="_blank">
-                <img src="icons/wordpress.png" alt="">
-                WordPress
             </a>
         </div>
 
+        <div style="margin-top: 40px; padding: 20px; background: #f9f9f9; border-radius: 6px;">
+            <h2 style="margin-top: 0; font-size: 20px;">Información de Contacto</h2>
+            <p><strong>Iglesia Cristiana Centro de Restauración (ICCR)</strong></p>
+            <p>Florencio Varela, Buenos Aires, Argentina</p>
+            <p><strong>Teléfono:</strong> +54 (011) 6088-0911</p>
+            <p><strong>Email:</strong> <a
+                    href="mailto:contacto@iglesiarestauracion.com.ar">contacto@iglesiarestauracion.com.ar</a></p>
+        </div>
+
         <footer>
-            Iglesia Cristiana Centro de Restauración · ICCR · Florencio Varela · Argentina
-            +54 (011) 6088-0911 · contacto@iglesiarestauracion.com.ar
+            <p>&copy; 2025 Iglesia Restauración — Florencio Varela, Buenos Aires</p>
         </footer>
 
     </div>

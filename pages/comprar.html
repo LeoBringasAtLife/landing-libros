@@ -1,48 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprar Libros</title>
-    <!-- Google Icon -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Comprar Libros - Walter Escalante</title>
+
+    <!-- Google Fonts/Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
     <!-- Estilos Globales -->
     <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Tipografía Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        .volver {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            text-decoration: none;
-            color: #444;
-            padding: 6px 12px;
+        .info-box {
+            background: #f9f9f9;
+            padding: 25px;
             border-radius: 6px;
-            transition: .2s;
-            margin-bottom: 40px;
-            text-decoration: none !important;
+            margin: 25px 0;
+            border-left: 4px solid #000;
         }
 
-        .volver:hover {
-            background: #eaeaea;
+        .info-box h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .contacto-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .contacto-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+        }
+
+        .contacto-item .material-symbols-rounded {
+            font-size: 24px;
+        }
+
+        .whatsapp-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #25D366;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .whatsapp-link:hover {
+            text-decoration: underline;
+        }
+
+        .libros-disponibles {
+            margin: 30px 0;
+        }
+
+        .libros-disponibles ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .libros-disponibles li {
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 6px;
         }
     </style>
 </head>
-
 <body>
     <div class="container">
-        <h1>Contribuciones</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="quienes-somos.html">Quienes Somos</a>
+            <a href="autor.html">El Autor</a>
+            <a href="libros.html">Libros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="contribuciones.html">Contribuciones</a>
+        </nav>
 
-        <a href="../index.html" class="volver">
-            <span class="material-symbols-outlined">arrow_back</span>
-            Volver al Inicio
-        </a>
+        <h1>Comprar Libros</h1>
 
-        <p>
-            Aquí puedes colaborar con el ministerio adquiriendo libros, realizando donaciones o apoyando los proyectos
-            editoriales de Walter Escalante.
-        </p>
+        <br>
+
+        <div class="info-box">
+            <h2>¿Cómo adquirir los libros?</h2>
+            <p>
+                Los libros de Walter Escalante están disponibles para su compra. Para realizar tu pedido o solicitar
+                más información sobre disponibilidad y precios, contáctanos a través de los siguientes medios.
+            </p>
+        </div>
+
+        <div class="contacto-info">
+            <div class="contacto-item">
+                <span class="material-symbols-rounded">phone</span>
+                <div>
+                    <strong>WhatsApp:</strong><br>
+                    <a href="https://wa.me/541155555555" class="whatsapp-link" target="_blank">
+                        <span class="material-symbols-rounded">chat</span>
+                        +54 (011) 5555-5555
+                    </a>
+                </div>
+            </div>
+
+            <div class="contacto-item">
+                <span class="material-symbols-rounded">email</span>
+                <div>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:contacto@iglesiarestauracion.com.ar">contacto@iglesiarestauracion.com.ar</a>
+                </div>
+            </div>
+
+            <div class="contacto-item">
+                <span class="material-symbols-rounded">location_on</span>
+                <div>
+                    <strong>Ubicación:</strong><br>
+                    Iglesia Restauración<br>
+                    Florencio Varela, Buenos Aires, Argentina
+                </div>
+            </div>
+        </div>
+
+        <div class="libros-disponibles">
+            <h2>Libros Disponibles</h2>
+            <ul>
+                <li>30 días con Proverbios</li>
+                <li>Fracasados: Un Camino a la Excelencia</li>
+                <li>Síntomas de un Corazón No Transformado</li>
+                <li>Dicho Está: Un Pensamiento para Cada Día</li>
+                <li>Dicho Está: Edición Verano</li>
+                <li>Dicho Está: Edición Otoño</li>
+                <li>Dicho Está: Edición Invierno</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>Envíos y Formas de Pago</h2>
+            <p>
+                Ofrecemos envíos a todo el país. Los métodos de pago y las condiciones de envío se coordinan al
+                momento de realizar tu pedido. No dudes en consultarnos sobre disponibilidad de stock y tiempos
+                de entrega.
+            </p>
+        </div>
     </div>
-</body>
 
+    <footer>
+        <div class="container">
+            <p style="text-align: center; font-size: 14px; color: #999;">&copy; 2025 Iglesia Restauración — Florencio Varela, Buenos Aires</p>
+        </div>
+    </footer>
+</body>
 </html>
