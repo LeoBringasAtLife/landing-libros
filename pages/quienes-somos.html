@@ -1,76 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quienes Somos - Libros - Walter Escalante</title>
+    <title>Quiénes Somos - Iglesia Restauración</title>
 
-    <!-- Google Fonts/Icons -->
+    <!-- Google Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <!-- Estilos Globales -->
     <link rel="stylesheet" href="../assets/css/style.css">
 
     <style>
-        /* Botón volver */
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #fff;
+            color: #333;
+            line-height: 1.75;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 60px auto;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
         .volver {
             display: inline-flex;
-            align-items: left;
+            align-items: center;
             gap: 6px;
             text-decoration: none;
-            color: #444;
-            padding: 6px 12px;
-            border-radius: 6px;
-            transition: .2s;
+            color: #333;
+            padding: 4px 10px;
             margin-bottom: 40px;
+            transition: 0.2s;
         }
 
         .volver:hover {
-            background: #eaeaea;
+            background: #f1f1f1;
+        }
+
+        p {
+            margin-bottom: 1.4em;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-top: 50px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: #111;
+        }
+
+        .pastores {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .pastores img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            margin-bottom: 12px;
+        }
+
+        .pastores h2 {
+            margin: 10px 0 5px 0;
+        }
+
+        .redes {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .redes a {
+            margin: 0 10px;
+            text-decoration: underline;
+            color: #333;
+        }
+
+        .redes a:hover {
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 60px;
+            padding-bottom: 40px;
         }
     </style>
-
 </head>
 
 <body>
     <div class="container">
+        <h1>Quiénes Somos</h1>
 
-        <h1>Quienes Somos</h1>
-        
         <a href="../index.html" class="volver">
             <span class="material-symbols-outlined">arrow_back</span>
             Volver al Inicio
         </a>
 
-        <p>
-            La Iglesia Restauración nació en el corazón de los pastores Walter y Adriana Escalante, en el mes de Enero
-            de 2011 en la ciudad de Villa La Florida, partido de Quilmes, Argentina.
-        </p>
+        <div class="pastores">
+            <img src="../assets/img/autor/pastor-walter-escalante.webp" alt="Foto de los pastores Walter Escalante y Adriana Dominguez">
+            <h2>Pastores Walter y Adriana Escalante</h2>
+            <p>Fundadores y líderes de <strong>Iglesia Restauración</strong></p>
+        </div>
 
-        <p>
-            Luego de 5 meses, el Señor los dirigió a arraigarse en la ciudad de Florencio Varela, a unos 10kms de Villa
-            La Florida, donde comenzaron las actividades el 2 de Julio de 2011.
-        </p>
 
-        <p>
-            Los pastores Walter y Adriana Escalante cursaron sus estudios teológicos en el Instituto Bíblico Río de la
-            Plata, y han desarrollado diversas labores en el área ministerial. El pastor Walter es también maestro en la
-            Palabra y se ha desempeñado previamente como pastor de jóvenes. La pastora Adriana ha sido pastora de Niños
-            (Escuela Bíblica) formando maestras idóneas para el área. Casados en 1987, tienen 5 hijos.
-        </p>
+        <div class="container">
+            <p>
+                La Iglesia Restauración nació en el corazón de los pastores Walter y Adriana Escalante en enero de 2011,
+                en Villa La Florida, partido de Quilmes, Argentina. Cinco meses después, Dios los guió a establecerse en
+                Florencio Varela, a unos 10 km de distancia, donde iniciaron las actividades el 2 de julio de 2011.
+            </p>
+            <p>
+                Ambos pastores cursaron sus estudios teológicos en el Instituto Bíblico Río de la Plata y cuentan con
+                amplia experiencia ministerial. El pastor Walter es maestro de la Palabra y se desempeñó como pastor de
+                jóvenes. La pastora Adriana lideró el ministerio de niños (Escuela Bíblica), formando maestras
+                capacitadas para esta área. Casados desde 1987, tienen cinco hijos.
+            </p>
+            <p>
+                La Iglesia Restauración se fundamenta en los principios bíblicos del amor, la contención y la
+                restauración. Su visión es "restaurar, volver a poner cada cosa en la posición para la cual fue creada",
+                enfocándose principalmente en quienes, habiendo servido al Señor, han sido víctimas de abusos
+                ministeriales y malas enseñanzas. Dios los llamó a ministrar en amor, restaurando vidas y ministerios
+                según el propósito divino.
+            </p>
+        </div>
 
-        <p>
-            La Iglesia Restauración está consolidada sobre los principios bíblicos del amor, la contención y la
-            restauración.
-        </p>
-
-        <p>
-            La visión es "restaurar, volver a poner cada cosa en la posición en la que fue creada". Dirigida
-            principalmente a quienes habiendo servido al Señor, han sido víctimas de abusos ministeriales y malas
-            enseñanzas. Dios nos llamó a ministrar en amor y con amor y así restaurar vidas y ministerios, al propósito
-            de Dios sobre sus vidas.
-        </p>
-
+        <footer>
+            © 2025 Iglesia Restauración — Florencio Varela, Buenos Aires
+        </footer>
     </div>
 </body>
 
